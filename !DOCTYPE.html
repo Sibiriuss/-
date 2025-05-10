@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Банк - Главная</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Ростов банк</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#rates">Тарифы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#" id="loginBtn">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Добро пожаловать в Мой Банк</h1>
+                <p>Надежные финансовые решения для вас</p>
+                <a href="#register" class="btn">Открыть счет</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Наши услуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Кредиты</h3>
+                        <p>Выгодные условия кредитования для любых целей</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Вклады</h3>
+                        <p>Высокие проценты по вкладам с гарантией возврата</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Карты</h3>
+                        <p>Кредитные и дебетовые карты с кэшбэком</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rates" class="rates">
+            <div class="container">
+                <h2>Тарифы и условия</h2>
+                <table>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Ставка</th>
+                        <th>Условия</th>
+                    </tr>
+                    <tr>
+                        <td>Кредит наличными</td>
+                        <td>от 12% годовых</td>
+                        <td>Срок до 5 лет</td>
+                    </tr>
+                    <tr>
+                        <td>Вклад "Стандарт"</td>
+                        <td>7% годовых</td>
+                        <td>От 3 месяцев</td>
+                    </tr>
+                    <tr>
+                        <td>Дебетовая карта</td>
+                        <td>0%</td>
+                        <td>Кэшбэк до 5%</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="register" class="register">
+            <div class="container">
+                <h2>Открыть счет</h2>
+                <form id="registrationForm">
+                    <input type="text" placeholder="ФИО" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Телефон" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <button type="submit" class="btn">Зарегистрироваться</button>
+                </form>
+            </div>
+        </section>
+
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Вход в личный кабинет</h2>
+                <form id="loginForm">
+                    <input type="text" placeholder="Логин" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <button type="submit" class="btn">Войти</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+                    <p>Email: info@mybank.ru</p>
+                    <p>Адрес: г. Москва, ул. Примерная, 123</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Часы работы</h3>
+                    <p>Пн-Пт: 9:00 - 18:00</p>
+                    <p>Сб: 10:00 - 15:00</p>
+                    <p>Вс: выходной</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Мой Банк. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
